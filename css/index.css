@@ -40,12 +40,11 @@ html body {
 }
 html body header {
   width: 100%;
-  padding: 0 20px 65px 20px;
+  padding: 50px 20px 50px 20px;
 }
 html body header .topper {
   justify-content: flex-start;
   font-size: 0.75rem;
-  margin-top: 50px;
 }
 html body header a {
   padding-right: 10px;
@@ -99,6 +98,7 @@ html body section .content {
 html body section .content .poster {
   margin: 10px;
   width: 45%;
+  text-align: left;
 }
 html body section .content .poster img {
   max-width: 100%;
