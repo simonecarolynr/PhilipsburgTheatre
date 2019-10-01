@@ -35,17 +35,17 @@ html body {
   font-family: 'Karla', sans-serif;
   color: #2C3531;
   background: #FFCB9A;
-  border-right: 1px solid #116466;
-  border-left: 1px solid #116466;
+  border-right: 2px solid #116466;
+  border-left: 2px solid #116466;
 }
 html body header {
   width: 100%;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 65px 20px;
 }
 html body header .topper {
   justify-content: flex-start;
   font-size: 0.75rem;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 html body header a {
   padding-right: 10px;
