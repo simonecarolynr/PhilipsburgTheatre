@@ -12,6 +12,14 @@
   cursor: pointer;
   color: #2C3531;
 }
+@media (max-width: 500px) {
+  table th {
+    width: 100%;
+  }
+  table td {
+    width: 100%;
+  }
+}
 html {
   background: #2C3531;
 }
@@ -22,37 +30,65 @@ html body {
   align-items: center;
   width: 60%;
   margin: 0 auto;
-  padding: 25px;
+  padding: 0 25px 0 25px;
+  outline: 12px solid #FFCB9A;
   font-family: 'Karla', sans-serif;
   color: #2C3531;
   background: #FFCB9A;
+  border-right: 1px solid #116466;
+  border-left: 1px solid #116466;
 }
-html body nav a {
+html body header {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+}
+html body header .topper {
+  justify-content: flex-start;
+  font-size: 0.75rem;
+  margin-top: 20px;
+}
+html body header a {
   padding-right: 10px;
   padding-left: 10px;
   text-decoration: none;
   cursor: pointer;
   color: #2C3531;
 }
-html body nav a:hover {
+html body header a:hover {
   color: #116466;
 }
+html body iframe {
+  min-width: 520px;
+  max-width: 2000px;
+  min-height: 145px;
+  max-height: 550px;
+  margin: 20px;
+  padding: 50px;
+  background: #116466;
+  outline: 10px solid #2C3531;
+}
 html body table {
-  width: 80%;
+  width: 70%;
   margin: 30px auto;
   align-items: center;
+  box-shadow: 0 0 200px lightyellow;
+  border-radius: 7px;
+  padding: 20px 50px 20px 50px;
+  background: #2C3531;
+  color: #FFCB9A;
 }
 html body table th {
   text-align: left;
   padding-right: 10px;
+  width: 55%;
+}
+html body table td {
+  text-align: right;
+  width: 45%;
 }
 html body section {
-  border-top: 1px solid #2C3531;
   margin: 15px;
   width: 100%;
-}
-html body section #event-content {
-  padding-top: 30px;
 }
 html body section .content {
   display: flex;
@@ -81,6 +117,8 @@ html body section .content a:hover {
 }
 html footer {
   margin-top: 30px;
+  padding: 35px 0 35px 0;
+  width: 100%;
 }
 html footer img {
   width: 30px;

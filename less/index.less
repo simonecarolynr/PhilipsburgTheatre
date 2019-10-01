@@ -1,5 +1,6 @@
 @import 'variables.less';
 @import 'mixins.less';
+@import 'tablet.less';
 
 html {
     background: @dark;
@@ -11,12 +12,24 @@ html {
         align-items: center;
         width: 60%;
         margin: 0 auto;
-        padding: 25px;
+        padding: 0 25px 0 25px;
+        outline: 12px solid @medium-accent;
         font-family: @body-font;
         color: @font-color;
         background: @medium-accent;
+        border-right: 1px solid @dark-accent;
+        border-left: 1px solid @dark-accent;
 
-        nav {
+        header {
+            width: 100%;
+            padding: 0 20px 20px 20px;
+
+            .topper {
+                justify-content: flex-start;
+                font-size: .75rem;
+                margin-top: 20px;
+            }
+       
             a {
                 .links();
             }
@@ -25,26 +38,44 @@ html {
                 color: @dark-accent;
             }
         }
+        iframe {
+            min-width: 520px;
+            max-width: 2000px;
+            min-height: 145px;
+            max-height: 550px;
+            margin: 20px;
+            padding: 50px;
+            background: @dark-accent;
+            outline: 10px solid @dark;
+
+        }
 
         table {
-            width: 80%;
+            width: 70%;
             margin: 30px auto;
             align-items: center;
-    
+            box-shadow: 0 0 200px lightyellow;
+            border-radius: 7px;
+            padding: 20px 50px 20px 50px;
+            background: @dark;
+            color: @medium-accent;
+            
             th {
                 text-align: left;
                 padding-right: 10px;
+                width: 55%;
             }
+
+            td {
+                text-align: right;
+                width: 45%;
+            }
+
         }
 
         section {
-            border-top: 1px solid @dark;
             margin: 15px;
             width: 100%;
-
-            #event-content {
-                padding-top: 30px;
-            }
 
             .content {
                 display: flex;
@@ -76,6 +107,8 @@ html {
 
     footer {
         margin-top: 30px;
+        padding: 35px 0 35px 0;
+        width: 100%;
         
         img {
             width: 30px;
