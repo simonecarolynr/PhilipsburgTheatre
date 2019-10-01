@@ -1,0 +1,84 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+html {
+    background: @dark;
+
+    body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 60%;
+        margin: 0 auto;
+        padding: 25px;
+        font-family: @body-font;
+        color: @font-color;
+        background: @medium-accent;
+
+        nav {
+            a {
+                .links();
+            }
+
+            a:hover {
+                color: @dark-accent;
+            }
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            align-items: center;
+    
+            th {
+                text-align: left;
+                padding-right: 10px;
+            }
+        }
+
+        section {
+            border-top: 1px solid @dark;
+            margin: 15px;
+            width: 100%;
+
+            #event-content {
+                padding-top: 30px;
+            }
+
+            .content {
+                display: flex;
+                flex-flow: wrap;
+                margin: 0 auto;
+                width: 60%;
+
+                .poster {
+                    margin: 10px;
+                    width: 45%;
+            
+                    img {
+                        max-width: 100%;
+                        min-height: 95%;
+                        max-height: 100%;
+                    }
+                }
+
+                a {
+                    .links();
+                }
+
+                a:hover {
+                    color: @dark-accent;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 30px;
+        
+        img {
+            width: 30px;
+        }
+    }
+}

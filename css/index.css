@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v8/qkBbXvYC6trAT7RVLtk.ttf) format('truetype');
+}
+.links {
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #2C3531;
+}
+html {
+  background: #2C3531;
+}
+html body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 25px;
+  font-family: 'Karla', sans-serif;
+  color: #2C3531;
+  background: #FFCB9A;
+}
+html body nav a {
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #2C3531;
+}
+html body nav a:hover {
+  color: #116466;
+}
+html body table {
+  width: 80%;
+  margin: 30px auto;
+  align-items: center;
+}
+html body table th {
+  text-align: left;
+  padding-right: 10px;
+}
+html body section {
+  border-top: 1px solid #2C3531;
+  margin: 15px;
+  width: 100%;
+}
+html body section #event-content {
+  padding-top: 30px;
+}
+html body section .content {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 auto;
+  width: 60%;
+}
+html body section .content .poster {
+  margin: 10px;
+  width: 45%;
+}
+html body section .content .poster img {
+  max-width: 100%;
+  min-height: 95%;
+  max-height: 100%;
+}
+html body section .content a {
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #2C3531;
+}
+html body section .content a:hover {
+  color: #116466;
+}
+html footer {
+  margin-top: 30px;
+}
+html footer img {
+  width: 30px;
+}
