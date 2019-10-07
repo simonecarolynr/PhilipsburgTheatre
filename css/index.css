@@ -21,7 +21,7 @@
   }
 }
 html {
-  background: #2C3531;
+  background: seashell;
 }
 html body {
   display: flex;
@@ -31,12 +31,9 @@ html body {
   width: 60%;
   margin: 0 auto;
   padding: 0 25px 0 25px;
-  outline: 12px solid #FFCB9A;
   font-family: 'Karla', sans-serif;
   color: #2C3531;
-  background: #FFCB9A;
-  border-right: 2px solid #116466;
-  border-left: 2px solid #116466;
+  background: seashell;
 }
 html body header {
   width: 100%;
@@ -70,11 +67,10 @@ html body table {
   width: 70%;
   margin: 30px auto;
   align-items: center;
-  box-shadow: 0 0 200px lightyellow;
   border-radius: 7px;
   padding: 20px 50px 20px 50px;
-  background: #2C3531;
-  color: #FFCB9A;
+  background: seashell;
+  color: #2C3531;
 }
 html body table th {
   text-align: left;
