@@ -35,6 +35,11 @@ html body {
   color: #2C3531;
   background: seashell;
 }
+html body h1,
+html body h2,
+html body h3 {
+  text-align: center;
+}
 html body header {
   width: 100%;
   padding: 50px 20px 50px 20px;
