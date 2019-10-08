@@ -1,64 +1,101 @@
 <HTML>
-    
-    <head>
-        <link rel='stylesheet' href='css/index.css'>
-        <title>Philipsburg Theatre</title>
-    </head>
 
-    <body class='container'>
+<head>
+    <link rel='stylesheet' href='css/index.css'>
+    <title>Philipsburg Theatre</title>
+    <script src="js/index.js" async></script>
+</head>
 
-        <header>
-            <div class='topper'><a href='community.html'>Community</a> | <a href='booking.html'>Booking</a></div>
-            <h1>Philipsburg Theatre</h1>
-            <nav>
-                <a href='events.html'>Events</a>
-                <a href='history.html'>History</a>
-                <a href='newsletter.html'>Newsletter</a>
-                <a href='calendar.html'>Calendar</a>
-            </nav>
-        </header>
+<body class='container'>
 
-<!--         <section class='about-us'>
+    <header>
+        <div class='topper'><a href='community.html'>Community</a> | <a href='booking.html'>Booking</a></div>
+        <h1>Philipsburg Theatre</h1>
+        <nav>
+            <a href='events.html'>Events</a>
+            <a href='history.html'>History</a>
+            <a href='newsletter.html'>Newsletter</a>
+            <a href='calendar.html'>Calendar</a>
+        </nav>
+    </header>
+
+    <!--         <section class='about-us'>
             <h2>About Us</h2>
             <p>Historical blurb. Just float around and be there. Let's make a happy little mountain now. All you have to learn here is how to have fun. Of course he's a happy little stone, cause we don't have any other kind. Even trees need a friend. We all need friends.
             This piece of canvas is your world. You can do anything your heart can imagine. Everybody needs a friend. Just think about these things in your mind and drop em' on canvas. Go out on a limb - that's where the fruit is. Let's make a nice big leafy tree.
             Trees cover up a multitude of sins. Work on one thing at a time. Don't get carried away - we have plenty of time. Let's have a happy little tree in here.</p>
         </section> -->
 
-        <section class='showing'>
-            <h2>This Weekend</h2>
-            <div class='content'>
-                <div class='poster'><img src='../images/showing/karatee-kid.jpg' alt='the karatee kid'>Fri 10/4 and Sat 10/5 @ 5:30pm</div>
-                <div class='poster'><img src='../images/showing/cuckoos-nest.jpg' alt='one flew over the cuckoo`s nest'>Fri 10/4 and Sat 10/5 @ 8:30pm</div>
-                <a href='events.html'>See more...</a>
+    <section class='showing'>
+        <h2>This Weekend</h2>
+        <div class='content'>
+            <div class='poster'><img src='../images/showing/karatee-kid.jpg' alt='the karatee kid'>Fri 10/4 and Sat 10/5 @ 5:30pm</div>
+            <div class='poster'><img src='../images/showing/cuckoos-nest.jpg' alt='one flew over the cuckoo`s nest'>Fri 10/4 and Sat 10/5 @ 8:30pm</div>
+            <a href='events.html'>See more...</a>
+        </div>
+    </section>
+
+    <section class='upcoming-showings'>
+        <h2>Upcoming Movies</h2>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="../images/upcoming/lady-and-the-tramp.jpg" style="width:100%">
+                <div class="text">Lady and the tramp</div>
             </div>
-        </section>
 
-        <section class='upcoming-showings'>
-            <h2>Upcoming Movies</h2>        
-            <div class='content'>
-                <div class='poster'><img src='../images/upcoming/lady-and-the-tramp.jpg' alt='Lady and the Tramp'>Oct 11th & 12th, @ 5:30pm</div>
-                <div class='poster'><img src='../images/upcoming/the-exorcist.jpg' alt='the exorcist'>Oct 12th, @ 8:30pm</div>
-                <div class='poster'><img src='../images/upcoming/cinderella.jpg' alt='cinderella'>Oct 18th & 19th, @ 5:30pm</div>
-                <div class='poster'><img src='../images/upcoming/alvin-and-chipmunks.jpg' alt='alvin and the chipmunks'>Oct 25th & 26th, @ 5:30pm</div> 
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="../images/upcoming/the-exorcist.jpg" style="width:100%">
+                <div class="text">The Exorcist</div>
             </div>
-        </section>
 
-        <section class='upcoming-events'>
-            <h2>Upcoming Events</h2>           
-            <div class='content'>
-                <div class='poster'><img src='../images/events/dance-club.jpg' alt=''></div>
-                <div class='poster'><img src='../images/events/elaine-cross-birthday.jpg' alt=''></div>
-                <a href='events.html'>See more...</a>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="../images/upcoming/cinderella.jpg" style="width:100%">
+                <div class="text">cinderella</div>
             </div>
-        </section>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="../images/upcoming/alvin-and-chipmunks.jpg" style="width:100%">
+                <div class="text">Alvin and chipmunks</div>
+            </div>
 
-    </body>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
 
-    <footer>
-            <img src='images/facebook-icon.png'>
-        <img src='images/youtube-icon.png'>
-        <img src='images/instagram-icon.png'>
-        </footer>
+        <!-- The dots/circles -->
+        <div>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+
+    </section>
+
+    <section class='upcoming-events'>
+        <h2>Upcoming Events</h2>
+        <div class='content'>
+            <div class='poster'><img src='../images/events/dance-club.jpg' alt=''></div>
+            <div class='poster'><img src='../images/events/elaine-cross-birthday.jpg' alt=''></div>
+            <a href='events.html'>See more...</a>
+        </div>
+    </section>
+
+</body>
+
+<footer>
+    <img src='images/facebook-icon.png'>
+    <img src='images/youtube-icon.png'>
+    <img src='images/instagram-icon.png'>
+</footer>
 
 </HTML>

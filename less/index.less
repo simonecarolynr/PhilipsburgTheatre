@@ -4,6 +4,9 @@
 
 html {
     background: seashell;
+   
+           
+          
 
     body {
         display: flex;
@@ -19,7 +22,9 @@ html {
         background: @light;
         //border-right: 2px solid @dark-accent;
         //border-left: 2px solid @dark-accent;
-
+        
+        
+        
         h1, h2, h3 {
             text-align: center;
         }
@@ -40,6 +45,7 @@ html {
             a:hover {
                 color: @dark-accent;
             }
+
         }
         iframe {
             min-width: 520px;
@@ -79,6 +85,7 @@ html {
         section {
             margin: 15px;
             width: 100%;
+       
 
             .content {
                 display: flex;
@@ -107,6 +114,19 @@ html {
                 }
             }
         }
+    }
+    //Carousel
+    .upcoming-showings {
+        width: 50%;
+        height: 50%;
+        box-sizing:border-box;
+         max-width: 80%;
+          .slideshow-container {
+            position: relative;
+            margin: auto;
+           .carousel();
+               
+            }
     }
 
     footer {
