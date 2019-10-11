@@ -35,11 +35,6 @@ html body {
   color: #2C3531;
   background: seashell;
 }
-html body h1,
-html body h2,
-html body h3 {
-  text-align: center;
-}
 html body header {
   width: 100%;
   padding: 50px 20px 50px 20px;
@@ -47,6 +42,9 @@ html body header {
 html body header .topper {
   justify-content: flex-start;
   font-size: 0.75rem;
+}
+html body header h1 {
+  font-size: 2.5rem;
 }
 html body header a {
   padding-right: 10px;
@@ -95,6 +93,9 @@ html body section .content {
   flex-flow: wrap;
   margin: 0 auto;
   width: 60%;
+}
+html body section .content h1 {
+  text-align: center;
 }
 html body section .content .poster {
   margin: 10px;
